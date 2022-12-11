@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_5">
+
+        <EditText
+            android:id="@+id/title_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_toLeftOf="@+id/search_iv"
+            android:background="@color/white"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+            android:hint="@string/enter_title"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:padding="@dimen/dp_5"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/black"/>
+        
+        <ImageView
+            android:id="@+id/search_iv"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_2"
+            android:background="@color/white"
+            android:src="@drawable/search"
+            android:contentDescription="@string/search" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_rl"
+        android:padding="@dimen/dp_5"
+        android:horizontalSpacing="@dimen/dp_5"
+        android:verticalSpacing="@dimen/dp_5"
+        android:numColumns="2"/>
+
+</RelativeLayout>

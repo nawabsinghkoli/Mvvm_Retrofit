@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BVCeServices</string>
+    <string name="invalid_image">Invalid Image</string>
+    <string name="title">Title</string>
+    <string name="year">Year</string>
+    <string name="search">Search</string>
+    <string name="enter_title">Please enter title to find</string>
+</resources>
